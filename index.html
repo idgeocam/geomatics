@@ -1,79 +1,170 @@
-<!doctype html>
+<!doctype HTML>
 <html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Your title here</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
-  </head>
-  
-  <body>
-
-    <header id="header">
-      <img src="logo.jpg">
-      <h1>Simple Website</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    <footer>  
-      Footer region
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./src/style-cv.css">
+		<script type="text/javascript" src="./src/parallax.js"></script>
+		<title>CV</title>
+	</head>	
+	<body>
+		<div id="fond"></div>
+		<div id="grille">
+			<div id="head">
+				<h1>Camille Thombrau</h1>
+				<h2>Technicien géomatique / bases de données</h2>
+				<p>
+					Titulaire d'un BTS en informatique industrielle, je veux renforcer mes acquis en intégrant les compétences propres au traitement de la donnée géographique, en particulier la modélisation de données ainsi que la manipulation de requêtes attributaires et spatiales.
+					En recherche d'un stage au sein d'une structure ayant un pôle géomatique.
+				</p>
+			</div>
+			<div id="main">
+				<div id="entete">
+					<h2>Parcours</h2>
+				</div>
+				<div id="titre1">
+					<h3>Technicien géomatique</h3>
+				</div>
+				<div id="date1">
+					<h4>2023-2024</h4>
+				</div>
+				<div id="liste1">
+					<h4>Idgéo</h4>
+					<ul>
+						<li>Inventaire et analyse des données recueillies</li>
+						<li>Structuration du MCD puis implémentation du MLD</li>
+						<li>Acquisition et contrôle des données saisies</li>
+						<li>Écriture de requêtes attributaires et spatiales</li>
+						<li>Production de cartes adaptées au public</li>
+						<li>Respect des chartes graphiques et de la sémiologie</li>
+						<li>Diffusion vers webmapping</li>
+						<li>Publication des métadonnées</li>
+					</ul>
+				</div>
+				<div id="titre2">
+					<h3>Stagiaire géomètre-topographe</h3>
+				</div>
+				<div id="date2">
+					<h4>2023</h4>
+				</div>
+				<div id="liste2">
+					<h4>Relief GE</h4>
+					<ul>
+						<li>Implantation de lotissements</li>
+						<li>Relevés GNSS sur départementales</li>
+					</ul>
+				</div>
+				<div id="titre3">
+					<h3>Assistant de communication</h3>
+				</div>
+				<div id="date3">
+					<h4>2022-2023</h4>
+				</div>
+				<div id="liste3">
+					<h4>Artothèque Sud</h4>
+					<ul>
+						<li>Communication audio-visuelle</li>
+						<li>Prise de son</li>
+					</ul>
+				</div>
+				<div id="titre4">
+					<h3>Ambulancier</h3>
+				</div>
+				<div id="date4">
+					<h4>2017-2022</h4>
+				</div>
+				<div id="liste4">
+					<h4>Ambulances Grand Sud</h4>
+					<ul>
+						<li>Brancardage et portage en sécurité</li>
+						<li>Conduite de véhicule sanitaire</li>
+						<li>Respect des protocoles d'hygiène</li>
+						<li>Travail en équipe interprofessionnelle</li>
+					</ul>
+				</div>
+				<div id="titre5">
+					<h3>Technicien systèmes et réseaux</h3>
+				</div>
+				<div id="date5">
+					<h4>2013-2014</h4>
+				</div>
+				<div id="liste5">
+					<h4>Journal La Marseillaise</h4>
+					<ul>
+						<li>Support utilisateur nv.2</li>
+						<li>Prise en main de poste a distance</li>
+						<li>Installation et configuration de nouveaux matériels</li>
+						<li>Automatisation des tâches courantes</li>
+						<li>Mastérisation de postes</li>
+						<li>Déploiement d'applications</li>
+					</ul>
+				</div>
+				<div id="titre6">
+					<h3>Système de gestion de parking</h3>
+				</div>
+				<div id="date6">
+					<h4>2010</h4>
+				</div>
+				<div id="liste6">
+					<h4>BTS IRIS</h4>
+					<ul>
+						<li>Base de données Oracle pour le flux des entrées sorties</li>
+						<li>Programmation d'une carte PIC avec interface TCP/IP</li>
+					</ul>
+				</div>
+				<div id="titre7">
+					<h3>Réalisation d'un site web en HTML4</h3>
+				</div>
+				<div id="date7">
+					<h4>2000</h4>
+				</div>
+				<div id="liste7">
+					<h4>Autodidacte</h4>
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div id="side">
+				<h2>Compétences</h2>
+				<h3>Outils</h3>
+				<ul>
+					<li>Active Directory</li>
+					<li>QGis</li>
+					<li>ArcGis</li>
+					<li>PostGreSQL/PostGIS</li>
+				</ul>
+				<h3>Langages informatiques</h3>
+				<ul>
+					<li>C/C++</li>
+					<li>SQL</li>
+					<li>HTML/CSS</li>
+					<li>PHP</li>
+				</ul>
+				<h2>Profil</h2>
+				<h3>Coordonnées</h3>
+				<ul>
+					<li>36 ans</li>
+					<li>Permis B / véhiculé</li>
+				</ul>
+				<h3>Qualités</h3>
+				<ul>
+					<li>Rigoureux</li>
+					<li>Organisé</li>
+					<li>Méthodique</li>
+					<li>Autodidacte</li>
+					<li>Curieux</li>
+					<li>Aisance relationnelle</li>
+				</ul>
+			</div>
+			<div id="foot">
+				<h2>Certifications</h2>
+				<ul>
+					<li>Certification de technicien en géomatique RNCP nv.5</li>
+					<li>BTS Informatique et Réseaux dans l'Industrie et les Services techniques</li>
+					<li>Diplôme d'état d'ambulancier</li>
+					<li>Attestation de Formation aux Gestes et Soins d'Urgences nv.2</li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>
