@@ -83,6 +83,9 @@ h1, h2, h3, h4 {
 						'titre7 titre7 titre7 date7'
 						'liste7 liste7 liste7 liste7';
 }
+#main > div {
+	align-self:center;
+}
 #head h1,
 #main h2,
 #side h2,
