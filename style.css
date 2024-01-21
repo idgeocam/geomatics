@@ -18,7 +18,7 @@ body {
 	top:-170px;
 	width:100%;
 	height:1080px;
-	background-image:url(https://idgeocam.github.io/geomatics/matrix.jpg);
+	background-image:url("../src/matrix.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	
@@ -28,36 +28,36 @@ body {
 	animation-play-state:paused;
 }
 ul, p {
-	padding:0 0 35px 0;
+	margin:0 0 35px 0;
+	padding:0 8px 0 8px;
 	list-style-type:none;
 }
-h1 {font-size:3.2rem;}
-h2 {font-size:2.8rem;}
+h1 {font-size:3rem;}
+h2 {font-size:2.6rem;}
 h3 {font-size:2rem;}
 h4 {font-size:1.7rem;}
 h1, h2, h3, h4 {
-	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+	padding:0 8px 0px 8px;
 	font-weight:100;
 	color:#cfffff;
 }
 #grille {
 	display:grid;
-	grid-template-columns:280px 280px 280px;
-	grid-template-areas:'head head head'
-						'main main side'
-						'foot foot foot';
+	grid-template-columns:140px 140px 140px 140px 140px 140px;
+	grid-template-areas:'head head head head head head'
+						'main main main main side side'
+						'foot foot foot foot foot foot';
 	max-width:840px;
 	margin:0 auto;
 	background-color:rgba(0,0,0,0.8);
 	box-shadow:0 0 600px 150px #000000;
 }
 #grille > div {
-	padding:10px;
+	margin:8px;
 	text-align:left;
 	font-size:1.6rem;
 	color:#6fe6ff;
-}
-#grille div {
 }
 #head {grid-area:head;}
 #head > p {text-align:justify;}
@@ -83,15 +83,14 @@ h1, h2, h3, h4 {
 						'titre7 titre7 titre7 date7'
 						'liste7 liste7 liste7 liste7';
 }
-#main > div {
-	align-self:center;
-}
 #head h1,
 #main h2,
 #side h2,
 #foot h2 {
 	background-color:rgba(150,220,255,.2);
-	background-clip:content-box;
+	background-clip:padding-box;
+	border-radius:8px;
+	box-shadow:0 0 10px 5px rgba(150,220,255,.2);
 }
 #entete {grid-area:entete;}
 #titre1 {grid-area:titre1;}
@@ -129,4 +128,3 @@ h1, h2, h3, h4 {
 @keyframes parallax {
 	to {transform: translateY(var(--distanceY));}
 }
-
