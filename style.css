@@ -6,8 +6,8 @@
 }
 :root {
 	font-size:10px;
-	font-family:Courier New,Helvetica,Arial;
-	letter-spacing:-.03rem;
+	font-family:Consolas,Helvetica,Arial;
+	letter-spacing:0.5rem;
 }
 body {
 	background-color:#000000;
