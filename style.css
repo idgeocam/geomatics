@@ -1,82 +1,96 @@
 :root
-	{font-size:10px;font-family:Consolas,Helvetica,Arial;--distanceY:-40px;}
+	{font-family:Consolas,Helvetica,Arial;}
 *
 	{margin:0;padding:0;box-sizing:border-box;}
 body
-	{background-color:#000000;font-size:1.6rem;color:#6fe6ff;}
+	{font-size:1.6rem;}
 h1, h2, h3, h4
-	{margin-bottom:5px;font-weight:100;color:#afffff;}
+	{font-weight:100;}
 h1
 	{font-size:3.8rem;}
 h2
-	{font-size:2.7rem;}
+	{margin-bottom:0.5rem;font-size:2.8rem;}
 h3
-	{font-size:2rem;}
+	{margin-bottom:0.5rem;font-size:2rem;}
 h4
-	{font-size:1.6rem;}
+	{margin-bottom:0.5rem;}
 ul
-	{margin-bottom:40px;list-style-type:none;}
+	{margin-bottom:4rem;list-style-type:none;}
 p
 	{text-align:justify;}
-
-.fond {
-	position:fixed;
-	z-index:-100;
-	top:-200px;
-	width:100%;
-	height:1080px;
-	
-	background-image:url(https://idgeocam.github.io/geomatics/matrix.jpg);
-	background-repeat:no-repeat;
-	
-	animation: parallax 1s linear;
-	animation-delay:calc(var(--scroll) * -1s);
-	animation-fill-mode:both;
-	animation-play-state:paused;
-}
-
 .grille {
-	max-width:1000px;
-	margin: 40px auto 0 auto;
-	padding:10px;
-	
-	background-color:rgba(0,0,0,0.8);
-	box-shadow:0 0 40px 40px rgba(0,0,0,0.75);
+	max-width:100rem;
+	margin:0 auto;
+	padding:4rem 1rem;
 	
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
-	gap:40px;
+	gap:4rem;
 }
-.nom	{grid-area:1/1/span 1/span 4;}
-.head	{grid-area:2/1/span 1/span 4;}	.head2	{grid-area:2/5/span 1/span 8;}
-.main	{grid-area:3/1/span 1/span 7;}	.side	{grid-area:3/8/span 1/span 5;}
-
 .date 
-	{margin:2px 4px 0 0;float:right;}
-.effet {
-	background-color:rgba(150,220,255,.15);
-	background-clip:padding-box;
-	border-radius:10px;
-	box-shadow:0 0px 5px 5px rgba(150,220,255,.15);	
-}
-
-@media only screen and (max-width:799px) {
-	.grille
-		{grid-template-columns: none;}
-	.nom
-		{grid-area:1/1/span 1/span 1;}
-	.head
-		{grid-area:1/2/span 1/span 1;}
-	.head2
-		{grid-area:2/1/span 1/span 2;}
-	.main
-		{grid-area:3/1/span 1/span 2;}
-	.side
-		{grid-area:4/1/span 1/span 2;}
+	{margin:0.2rem 0.6rem 0 0;float:right;}
+	
+@media only screen {
 	:root
-		{--distanceY:-100px;}
+		{font-size:10px;}
+	body
+		{background-color:rgb(0,0,0);color:rgb(153,238,255);}
+	h1, h2, h3, h4
+		{color:rgb(0,212,255);}
+	h4
+		{color:rgb(77,225,255);}
+	.fond {
+		position:fixed;
+		z-index:-100;
+		top:-200px;
+		width:100%;
+		height:1080px;
+		
+		background-image:url(https://idgeocam.github.io/geomatics/matrix.jpg);
+		background-repeat:no-repeat;
+		
+		animation: parallax 1s linear;
+		animation-delay:calc(var(--scroll) * -1s);
+		animation-fill-mode:both;
+		animation-play-state:paused;
+	}
+	.grille
+		{background-color:rgba(0,0,0,0.8);box-shadow:0 0 1rem 1rem rgba(0,0,0,0.8);}
+	
+	.nom	{grid-area:1/1/span 1/span 12;}
+	.head	{grid-area:2/1/span 1/span 4;}	.head2	{grid-area:2/6/span 1/span 6;}
+	.main	{grid-area:3/1/span 1/span 7;}	.side	{grid-area:3/8/span 1/span 5;}
+	.effet {
+		margin-left:-0.6rem;
+		padding-left:0.6rem;
+		background-color:rgba(153,238,255,0.15);
+		background-clip:padding-box;
+		border-radius:0.8rem;
+		box-shadow:0 0 0.5rem 0.5rem rgba(153,238,255,0.15);
+	}
+	@media only screen and (max-width:799px) {
+		.nom	{grid-area:1/1/span 1/span 6;}	.head	{grid-area:1/7/span 1/span 6;}
+		.head2	{grid-area:2/1/span 1/span 12;}
+		.main	{grid-area:3/1/span 1/span 12;}
+		.side	{grid-area:4/1/span 1/span 12;}
+	}
+	@keyframes parallax {
+		to {transform: translateY(-50px);}
+	}
 }
-@keyframes parallax {
-	to
-		{transform: translateY(var(--distanceY));}
+@media only print {
+	:root 
+		{font-size:7px;}
+	body
+		{background-color:rgb(255,255,255);color:rgb(0,42,51);}
+	h1, h2, h3, h4
+		{color:rgb(0,149,179);}
+	h4
+		{color:rgb(0,85,102);}
+	.grille
+		{background-color:rgb(255,255,255);box-shadow:none;}
+	
+	.nom	{grid-area:1/1/span 1/span 7;}
+	.head	{grid-area:2/1/span 1/span 7;}	.head2	{grid-area:2/8/span 2/span 5;}
+	.main	{grid-area:3/1/span 3/span 7;}	.side	{grid-area:4/8/span 2/span 5;}
 }
