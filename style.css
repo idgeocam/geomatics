@@ -71,7 +71,7 @@ img
 		{background-color:rgba(0,0,0,0.8);box-shadow:0 0 8rem 8rem rgba(0,0,0,0.8);}	
 	.nom	{grid-area:1/1/span 1/span 7;}
 	.head	{grid-area:2/1/span 1/span 3;}	.head2	{grid-area:2/4/span 2/span 4;}
-	.icone	{grid-area:3/1/span 1/span 4;}
+	.icone	{grid-area:3/1/span 1/span 3;}
 	.main	{grid-area:4/1/span 1/span 4;}	.side	{grid-area:4/5/span 1/span 3;}
 	
 	@media only screen and (max-width:799px) {
