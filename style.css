@@ -22,14 +22,8 @@ img
 	{margin-inline:1rem;}
 .infos
 	{margin-bottom:0;}
-.grille {
-	max-width:100rem;
-	margin:0 auto;
-	padding:4rem 0 40rem 0;
-	
-	display:grid;
-	grid-template-columns: repeat(7, 1fr);
-}
+.grille
+	{max-width:100rem;margin:0 auto;display:grid;grid-template-columns:repeat(7, 1fr);}
 .item
 	{margin:2rem;}
 	
@@ -68,7 +62,7 @@ img
 	.date
 		{margin:0.3rem 0 0 2rem;float:right;}
 	.grille
-		{background-color:rgba(0,0,0,0.8);box-shadow:0 0 8rem 8rem rgba(0,0,0,0.8);}	
+		{padding:4rem 0 40rem 0;background-color:rgba(0,0,0,0.8);box-shadow:0 0 8rem 8rem rgba(0,0,0,0.8);}	
 	.nom	{grid-area:1/1/span 1/span 7;}
 	.head	{grid-area:2/1/span 1/span 3;}	.head2	{grid-area:2/4/span 2/span 4;}
 	.icone	{grid-area:3/1/span 1/span 3;}
