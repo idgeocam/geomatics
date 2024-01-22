@@ -1,5 +1,5 @@
 :root
-	{font-family:Consolas,Courier New,Helvetica,Arial;}
+	{font-family:Consolas,monospace,monaco,Helvetica,Arial;}
 *
 	{margin:0;padding:0;box-sizing:border-box;}
 body
@@ -74,7 +74,7 @@ img
 	.icone	{grid-area:3/1/span 1/span 3;}
 	.main	{grid-area:4/1/span 1/span 4;}	.side	{grid-area:4/5/span 1/span 3;}
 	
-	@media only screen and (max-width:799px) {
+	@media only screen and (max-width:767px) {
 		.nom	{grid-area:1/1/span 1/span 7;}
 		.head	{grid-area:2/1/span 1/span 6;}	.icone	{grid-area:2/7/span 1/span 1;}
 		.head2	{grid-area:3/1/span 1/span 7;}
