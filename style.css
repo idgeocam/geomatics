@@ -87,7 +87,7 @@ img
 }
 @media only print {
 	:root 
-		{font-size:5pt;}
+		{font-size:4.9pt;}
 	body
 		{background-color:rgb(255,255,255);color:rgb(0,42,51);}
 	h1, h2, h3, h4
