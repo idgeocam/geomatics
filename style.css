@@ -87,7 +87,7 @@ img
 }
 @media only print {
 	:root 
-		{font-size:4.9pt;}
+		{font-size:5.2pt;}
 	body
 		{background-color:rgb(255,255,255);color:rgb(0,42,51);}
 	h1, h2, h3, h4
@@ -99,7 +99,7 @@ img
 	.icone	
 		{display:none;}
 	.grille
-		{padding:4rem 0 0 0;background-color:rgb(255,255,255);box-shadow:none;}	
+		{padding:0;background-color:rgb(255,255,255);box-shadow:none;}	
 	.nom	{grid-area:1/1/span 1/span 7;}
 	.head	{grid-area:2/1/span 1/span 4;}	.head2	{grid-area:2/5/span 2/span 3;}
 	.main	{grid-area:3/1/span 3/span 4;}	.side	{grid-area:4/5/span 2/span 3;}
