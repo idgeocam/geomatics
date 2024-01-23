@@ -27,6 +27,8 @@ ul:not(:last-child)
 	{margin-bottom:2rem;}
 p
 	{text-align:justify;}
+a:hover
+	{cursor:pointer;}
 
 .fond {
 	position:fixed;
