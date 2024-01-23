@@ -9,7 +9,7 @@
 	--bgcolor:rgb(0,0,0);
 
 	--txcolorprint:rgb(0,42,51);
-	--txcolortitleprint:rgb(0,127,153);
+	--txcolortitleprint:rgb(0,106,128);
 	--bgcolorprint:rgb(255,255,255);
 
 	font-size:10px;
@@ -30,11 +30,11 @@ h3
 h4
 	{font-size:1.6rem;margin-bottom:0.8rem;}
 h5
-	{font-size:1.6rem;float:right;margin:0.4rem 0 0 2rem;}
+	{font-size:1.6rem;margin-top:0.4rem;margin-left:3rem;float:right;}
 ul
 	{list-style-type:none;}
 ul:not(:last-child)
-	{margin-bottom:2rem;}
+	{margin-bottom:20px;}
 p
 	{text-align:justify;}
 img:hover
@@ -43,7 +43,7 @@ img:hover
 .fond {
 	position:fixed;
 	z-index:-100;
-	top:-300px;
+	top:-200px;
 	width:100%;
 	height:1080px;
 	background-image:url(matrix.jpg);
@@ -53,11 +53,11 @@ img:hover
 	animation-play-state:paused;
 }
 @keyframes parallax {
-	to {transform: translateY(-80px);}
+	to {transform: translateY(-100px);}
 }
 .titre {
-	margin-inline:-0.4rem;
-	padding-inline:0.4rem;
+	margin-inline:-4px;
+	padding-inline:4px;
 	background-color:var(--bgcolortitle);
 	background-clip:padding-box;
 	border-radius:3px;
@@ -66,9 +66,10 @@ img:hover
 .grille	{
 	max-width:100rem;
 	margin-inline:auto;
-	padding:4rem 0 32rem 0;	
+	padding-top:40px;
+	padding-bottom:320px;
 	background-color:var(--bgcolorgrid);
-	box-shadow:0 0 4rem 4rem var(--bgcolorgrid);
+	box-shadow:0 0 40px 40px var(--bgcolorgrid);
 	display:grid;
 	grid-template-columns:repeat(7, 1fr);
 	grid-template-areas:'name name name name name name name'
