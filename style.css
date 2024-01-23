@@ -1,16 +1,26 @@
-@font-face {
-	font-display:swap;
-	font-family:sometype;
-	src:url(SometypeMono-Regular.ttf);
+@font-face
+	{font-display:swap;font-family:sometype;src:url(SometypeMono-Regular.ttf);}
+
+:root {
+	--txcolor:rgb(153,238,255);
+	--txcolortitle:rgb(0,212,255);
+	--bgcolortitle:rgba(0,212,255,0.15);
+	--bgcolorgrid:rgba(0,0,0,0.75);
+	--bgcolor:rgb(0,0,0);
+
+	--txcolorprint:rgb(0,42,51);
+	--txcolortitleprint:rgb(0,127,153);
+	--bgcolorprint:rgb(255,255,255);
+
+	font-size:10px;
+	font-family:sometype,monospace,monaco;
 }
-:root
-	{font-size:10px;font-family:sometype,monospace,monaco;}
 *
 	{margin:0;padding:0;box-sizing:border-box;line-height:1.4;}
 body
-	{font-size:1.6rem;background-color:rgb(0,0,0);color:rgb(153,238,255);}
+	{font-size:1.6rem;background-color:var(--bgcolor);color:var(--txcolor);}
 h1, h2, h3, h4, h5
-	{font-weight:100;color:rgb(0,212,255);}
+	{font-weight:100;color:var(--txcolortitle);}
 h1
 	{font-size:4rem;}
 h2
@@ -48,17 +58,17 @@ img:hover
 .titre {
 	margin-inline:-0.4rem;
 	padding-inline:0.4rem;
-	background-color:rgba(0,212,255,0.15);
+	background-color:var(--bgcolortitle);
 	background-clip:padding-box;
 	border-radius:3px;
-	box-shadow:0 0 4px 4px rgba(0,212,255,0.15);
+	box-shadow:0 0 4px 4px var(--bgcolortitle);
 }
 .grille	{
 	max-width:100rem;
 	margin-inline:auto;
 	padding:4rem 0 32rem 0;	
-	background-color:rgba(0,0,0,0.75);
-	box-shadow:0 0 4rem 4rem rgba(0,0,0,0.76);
+	background-color:var(--bgcolorgrid);
+	box-shadow:0 0 4rem 4rem var(--bgcolorgrid);
 	display:grid;
 	grid-template-columns:repeat(7, 1fr);
 	grid-template-areas:'name name name name name name name'
@@ -94,12 +104,12 @@ img:hover
 	:root 
 		{font-size:6.25pt;}
 	body
-		{background-color:rgb(255,255,255);color:rgb(0,42,51);}
+		{background-color:var(--bgcolorprint);color:var(--txcolorprint);}
 	h1, h2, h3, h4, h5
-		{color:rgb(0,127,153);}
+		{color:var(--txcolortitleprint);}
 	.grille {
 		padding:0;
-		background-color:rgb(255,255,255);
+		background-color:var(--bgcolorprint);
 		box-shadow:none;
 		grid-template-areas:'main main main main name name name'
 							'main main main main info info info'
@@ -113,5 +123,5 @@ img:hover
 	.info
 		{text-align:right;}
 	.titre
-		{background-color:rgba(255,255,255,1);box-shadow:none;}
+		{background-color:var(--bgcolorprint);box-shadow:none;}
 }
