@@ -1,9 +1,10 @@
 @font-face {
-    font-family: sometype;
-    src: url(SometypeMono-Regular.ttf);
+	font-display:swap;
+	font-family:sometype;
+	src:url(SometypeMono-Regular.ttf);
 }
 :root
-	{font-size:10px;font-display:swap;font-family:sometype,monospace,monaco;}
+	{font-size:10px;font-family:sometype,monospace,monaco;}
 *
 	{margin:0;padding:0;box-sizing:border-box;line-height:1.4;}
 body
