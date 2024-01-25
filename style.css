@@ -34,9 +34,7 @@ h5
 p
 	{font-size:1.6rem;text-align:justify;}
 ul
-	{font-size:1.6rem;list-style-type:none;}
-ul:not(:last-child)
-	{margin-bottom:20px;}
+	{font-size:1.6rem;list-style-type:none;margin-bottom:20px;}
 img:hover
 	{cursor:pointer;}
 
@@ -117,6 +115,8 @@ img:hover
 		{color:var(--txcolortitleprint);}
 	h1
 		{margin-top:0;}
+	ul:last-child
+		{margin-bottom:0;}
 	.fond
 		{display:none;}
 	.grille {
