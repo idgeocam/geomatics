@@ -73,7 +73,7 @@ img:hover
 	padding-top:40px;
 	padding-bottom:320px;
 	background-color:var(--bgcolorgrid);
-	box-shadow:0 0 40px 40px var(--bgcolorgrid);
+	box-shadow:0 0 10px 10px var(--bgcolorgrid);
 	display:grid;
 	grid-template-columns:repeat(7, 1fr);
 	grid-template-areas:	'name name name name name name name'
