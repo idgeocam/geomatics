@@ -41,7 +41,8 @@ img:hover
 	{cursor:pointer;}
 
 @keyframes parallax {
-	to {transform:translateY(-150px);}
+	from {transform:translateY(0);bottom:0;}
+	to {transform:translateY(-75px);bottom:75px;}
 }
 .fond {
 	position:fixed;
