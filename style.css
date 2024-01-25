@@ -4,7 +4,7 @@
 :root {
 	--txcolor:hsl(190deg 100% 75%);
 	--txcolortitle:hsl(190deg 100% 50%);
-	--bgcolortitle:hsla(190deg 100% 50%/0.15);
+	--bgcolortitle:hsla(190deg 100% 50%/0.12);
 	--bgcolorgrid:hsla(190deg 100% 0%/0.7);
 	--bgcolor:hsl(190deg 100% 0%);
 
