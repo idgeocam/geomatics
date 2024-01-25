@@ -72,6 +72,7 @@ img:hover
 	margin-inline:auto;
 	padding-bottom:320px;
 	display:grid;
+	grid-template-rows:max-content 1fr max-content max-content max-content;
 	grid-template-columns:repeat(7, 1fr);
 	grid-template-areas:	'name name name name name name name'
 				'info info info head head head head'
