@@ -2,7 +2,7 @@
 	{font-display:swap;font-family:sometype;src:url(SometypeMono-Regular.ttf);}
 
 :root {
-	--txcolor:hsl(188deg 100% 80%);
+	--txcolor:hsl(190deg 100% 80%);
 	--txcolortitle:hsl(188deg 100% 50%);
 	--bgcolortitle:hsla(188deg 100% 50%/0.15);
 	--bgcolorgrid:hsla(188deg 100% 0%/0.7);
