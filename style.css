@@ -2,11 +2,11 @@
 	{font-display:swap;font-family:sometype;src:url(SometypeMono-Regular.ttf);}
 
 :root {
-	--txcolor:hsl(188deg 100% 75%);
-	--txcolortitle:hsl(188deg 100% 50%);
-	--bgcolortitle:hsla(188deg 100% 50%/0.15);
-	--bgcolorgrid:hsla(188deg 100% 0%/0.7);
-	--bgcolor:hsl(188deg 100% 0%);
+	--txcolor:hsl(190deg 100% 75%);
+	--txcolortitle:hsl(190deg 100% 50%);
+	--bgcolortitle:hsla(190deg 100% 50%/0.15);
+	--bgcolorgrid:hsla(190deg 100% 0%/0.8);
+	--bgcolor:hsl(190deg 100% 0%);
 
 	--txcolorprint:hsl(188deg 100% 10%);
 	--txcolortitleprint:hsl(188deg 100% 25%);
@@ -41,15 +41,16 @@ img:hover
 	{cursor:pointer;}
 
 @keyframes parallax {
-	from {top:0;}
-	to {top:-150px;}
+	from {top:-200px;}
+	to {top:-300px;}
 }
 .fond {
 	position:fixed;
 	z-index:-9999;
-	width:100%;
-	height:980px;
-	background-image:url(matrix2.jpg);
+	left:-70px;
+	width:120%;
+	height:1200px;
+	background-image:url(matrix4.jpg);
 	background-repeat:repeat-x;
 	
 	animation:parallax 1s linear;
