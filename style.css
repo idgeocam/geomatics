@@ -22,7 +22,7 @@ body
 h1, h2, h3, h4, h5
 	{font-weight:100;color:var(--txcolortitle);}
 h1
-	{font-size:4rem;}
+	{font-size:4rem;margin-top:20px;}
 h2
 	{font-size:3rem;margin-bottom:1.4rem;}
 h3
@@ -70,10 +70,7 @@ img:hover
 .grille	{
 	max-width:100rem;
 	margin-inline:auto;
-	padding-top:40px;
 	padding-bottom:320px;
-	background-color:var(--bgcolorgrid);
-	box-shadow:0 0 10px 10px var(--bgcolorgrid);
 	display:grid;
 	grid-template-columns:repeat(7, 1fr);
 	grid-template-areas:	'name name name name name name name'
@@ -88,13 +85,16 @@ img:hover
 .head
 	{grid-area:head;}
 .icon
-	{grid-area:icon;align-self:end;}
+	{grid-area:icon;}
 .main
 	{grid-area:main;}
 .side
 	{grid-area:side;}
-.item
-	{margin:15px;}
+.item {
+	margin:20px;
+	background-color:var(--bgcolorgrid);
+	box-shadow:0 0 20px 20px var(--bgcolorgrid);
+}
 
 @media only screen and (max-width:767px) {
 	.grille {
@@ -113,17 +113,22 @@ img:hover
 		{background-color:var(--bgcolorprint);color:var(--txcolorprint);}
 	h1, h2, h3, h4, h5
 		{color:var(--txcolortitleprint);}
+	h1
+		{margin-top:0;}
 	.fond
 		{display:none;}
 	.grille {
 		padding:0;
-		background-color:var(--bgcolorprint);
-		box-shadow:none;
 		grid-template-columns:4fr 3fr;
 		grid-template-areas:	'main name'
 					'main info'
 					'main head'
 					'main side';
+	}
+	.item {
+		margin:10px 20px;
+		background-color:var(--bgcolorprint);
+		box-shadow:none;
 	}
 	.icon
 		{display:none;}
