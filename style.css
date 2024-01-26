@@ -4,7 +4,7 @@
 :root {
 	--txcolor:hsl(190deg 100% 75%);
 	--txcolortitle:hsl(190deg 100% 50%);
-	--bgcolortitle:hsla(190deg 100% 50%/0.12);
+	--bgcolortitle:hsla(190deg 100% 50%/0.1);
 	--bgcolorgrid:hsla(190deg 100% 0%/0.7);
 	--bgcolor:hsl(190deg 100% 0%);
 
@@ -62,7 +62,7 @@ img:hover
 	padding-inline:4px;
 	background-color:var(--bgcolortitle);
 	background-clip:padding-box;
-	border-radius:3px;
+	border-radius:100px;
 	box-shadow:0 0 4px 4px var(--bgcolortitle);
 }
 .grille	{
@@ -93,7 +93,7 @@ img:hover
 .item {
 	margin:20px;
 	background-color:var(--bgcolorgrid);
-	box-shadow:0 0 20px 20px var(--bgcolorgrid);
+	box-shadow:0 0 24px 24px var(--bgcolorgrid);
 }
 
 @media only screen and (max-width:767px) {
