@@ -3,15 +3,14 @@
 
 :root {
 	--txcolor:hsl(190deg 100% 75%);
-	--txcolortitle:hsl(190deg 100% 50%);
 	--bgcolor:hsl(190deg 100% 0%);
-	--bgcolortitle:hsla(190deg 100% 50%/0.1);
-	--bgcolorgrid:hsla(190deg 100% 0%/0.7);
-	--shcolorgrid:hsla(190deg 100% 0%/0.72);
-
-	--txcolorprint:hsl(188deg 100% 10%);
-	--txcolortitleprint:hsl(188deg 100% 25%);
-	--bgcolorprint:hsl(188deg 100% 100%);
+	
+	--txcolortitle:hsl(190deg 100% 50%);
+	--shcolortitle:hsla(190deg 100% 50%/1);
+	--bgcolortitle:hsla(190deg 100% 50%/0.05);
+	
+	--shcolorgrid:hsla(190deg 100% 0%/1);
+	--bgcolorgrid:hsla(190deg 100% 0%/0.25);
 
 	font-size:10px;
 	font-family:sometype,monospace,monaco;
@@ -21,9 +20,9 @@
 body
 	{overflow-wrap:anywhere;line-height:1.4;background-color:var(--bgcolor);color:var(--txcolor);}
 h1, h2, h3, h4, h5
-	{font-weight:100;color:var(--txcolortitle);}
+	{font-weight:100;color:var(--txcolortitle);filter:drop-shadow(0px 0px 5px var(--shcolortitle));}
 h1
-	{font-size:4rem;margin-top:20px;}
+	{font-size:4rem;}
 h2
 	{font-size:3rem;margin-bottom:1.4rem;}
 h3
@@ -36,6 +35,8 @@ p
 	{font-size:1.6rem;text-align:justify;}
 ul
 	{font-size:1.6rem;list-style-type:none;margin-bottom:20px;}
+img
+	{filter:drop-shadow(0px 0px 5px var(--shcolortitle));}
 img:hover
 	{cursor:pointer;}
 
@@ -61,23 +62,31 @@ img:hover
 .titre {
 	margin-inline:-8px;
 	padding-inline:8px;
-	background-color:var(--bgcolortitle);
-	background-clip:padding-box;
 	border-radius:100px;
+	background-clip:padding-box;
+	background-color:var(--bgcolortitle);
 	box-shadow:0 0 4px 4px var(--bgcolortitle);
 }
 .grille	{
 	max-width:100rem;
 	margin-inline:auto;
+	padding-top:15px;
 	padding-bottom:320px;
+	filter:drop-shadow(0px 0px 5px var(--shcolorgrid)) drop-shadow(0px 0px 50px var(--shcolorgrid));
 	display:grid;
 	grid-template-rows:max-content 1fr max-content max-content max-content;
-	grid-template-columns:repeat(7, 1fr);
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas:	'name name name name name name name'
 				'info info info head head head head'
 				'icon icon icon head head head head'
 				'main main main main side side side'
 				'main main main main .... .... ....';
+}
+.item {
+	margin:8px;
+	padding:8px;
+	background-color:var(--bgcolorgrid);
+	box-shadow:0 0 10px 10px var(--bgcolorgrid);
 }
 .name
 	{grid-area:name;}
@@ -91,13 +100,8 @@ img:hover
 	{grid-area:main;}
 .side
 	{grid-area:side;}
-.item {
-	margin:20px;
-	background-color:var(--bgcolorgrid);
-	box-shadow:0 0 24px 24px var(--shcolorgrid);
-}
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:799px) {
 	.grille {
 		grid-template-columns:1fr max-content;
 		grid-template-areas:	'name name'
@@ -108,12 +112,18 @@ img:hover
 	}
 }
 @media only print {
-	:root 
-		{font-size:8.2px;}
+	:root {
+		font-size:8.2px;
+		--txcolor:hsl(190deg 100% 12.5%);
+		--bgcolor:hsl(190deg 100% 100%);
+		--txcolortitle:hsl(190deg 100% 25%);
+		--bgcolortitle:hsla(190deg 100% 100%/0);
+		--bgcolorgrid:hsla(190deg 100% 100%/0);
+	}
 	body
-		{background-color:var(--bgcolorprint);color:var(--txcolorprint);}
+		{}
 	h1, h2, h3, h4, h5
-		{color:var(--txcolortitleprint);}
+		{filter:none;}
 	h1
 		{margin-top:0;}
 	ul:last-child
@@ -122,16 +132,16 @@ img:hover
 		{display:none;}
 	.grille {
 		padding:0;
+		filter:none;
 		grid-template-columns:4fr 3fr;
-		grid-template-areas:	'main name'
-					'main info'
-					'main head'
-					'main side';
+		grid-template-areas:'main name'
+							'main info'
+							'main head'
+							'main side';
 	}
 	.item {
 		margin:10px 20px;
-		background-color:var(--bgcolorprint);
-		box-shadow:none;
+		padding:0;
 	}
 	.icon
 		{display:none;}
@@ -140,5 +150,5 @@ img:hover
 	.info
 		{text-align:right;}
 	.titre
-		{background-color:var(--bgcolorprint);box-shadow:none;}
+		{}
 }
