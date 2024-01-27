@@ -3,14 +3,14 @@
 
 :root {
 	--txcolor:hsl(190deg 100% 75%);
+	--txcolorh:hsl(190deg 100% 50%);
+	
 	--bgcolor:hsl(190deg 100% 0%);
-	
-	--txcolortitle:hsl(190deg 100% 50%);
-	--shcolortitle:hsla(190deg 100% 50%/1);
-	--bgcolortitle:hsla(190deg 100% 50%/0.05);
-	
-	--shcolorgrid:hsla(190deg 100% 0%/1);
+	--bgcolorh3:hsla(190deg 100% 50%/0.04);
 	--bgcolorgrid:hsla(190deg 100% 0%/0.25);
+	
+	--shcolorh:hsl(190deg 100% 50%);
+	--shcolorgrid:hsl(190deg 100% 0%);
 
 	font-size:10px;
 	font-family:sometype,monospace,monaco;
@@ -20,13 +20,13 @@
 body
 	{overflow-wrap:anywhere;line-height:1.4;background-color:var(--bgcolor);color:var(--txcolor);}
 h1, h2, h3, h4, h5
-	{font-weight:100;color:var(--txcolortitle);filter:drop-shadow(0px 0px 5px var(--shcolortitle));}
+	{font-weight:100;color:var(--txcolorh);filter:drop-shadow(0px 0px 5px var(--shcolorh));}
 h1
 	{font-size:4rem;}
 h2
 	{font-size:3rem;margin-bottom:1.4rem;}
 h3
-	{font-size:2rem;margin-bottom:0.4rem;}
+	{font-size:2rem;margin-bottom:0.4rem;background-color:var(--bgcolorh3);box-shadow:0 0 4px 4px var(--bgcolorh3);}
 h4
 	{font-size:1.6rem;margin-bottom:0.8rem;}
 h5
@@ -36,7 +36,7 @@ p
 ul
 	{font-size:1.6rem;list-style-type:none;margin-bottom:20px;}
 img
-	{filter:drop-shadow(0px 0px 5px var(--shcolortitle));}
+	{filter:drop-shadow(0px 0px 5px var(--shcolorh));}
 img:hover
 	{cursor:pointer;}
 
@@ -60,12 +60,6 @@ img:hover
 	animation-play-state:paused;
 }
 .titre {
-	margin-inline:-8px;
-	padding-inline:8px;
-	border-radius:100px;
-	background-clip:padding-box;
-	background-color:var(--bgcolortitle);
-	box-shadow:0 0 4px 4px var(--bgcolortitle);
 }
 .grille	{
 	max-width:100rem;
@@ -116,8 +110,8 @@ img:hover
 		font-size:8.2px;
 		--txcolor:hsl(190deg 100% 12.5%);
 		--bgcolor:hsl(190deg 100% 100%);
-		--txcolortitle:hsl(190deg 100% 25%);
-		--bgcolortitle:hsla(190deg 100% 100%/0);
+		--txcolorh:hsl(190deg 100% 25%);
+		--bgcolorh:hsla(190deg 100% 100%/0);
 		--bgcolorgrid:hsla(190deg 100% 100%/0);
 	}
 	body
@@ -148,7 +142,5 @@ img:hover
 	.name
 		{text-align:right;}
 	.info
-		{text-align:right;}
-	.titre
-		{}
+		{text-align:right;align-self:center;}
 }
