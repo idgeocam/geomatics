@@ -109,10 +109,10 @@ img:hover
 	:root {
 		font-size:8.2px;
 		--txcolor:hsl(190deg 100% 12.5%);
-		--bgcolor:hsl(190deg 100% 100%);
 		--txcolorh:hsl(190deg 100% 25%);
-		--bgcolorh:hsla(190deg 100% 100%/0);
-		--bgcolorgrid:hsla(190deg 100% 100%/0);
+		--bgcolor:hsl(190deg 100% 100%);
+		--bgcolorh3:hsl(190deg 100% 100%);
+		--bgcolorgrid:hsl(190deg 100% 100%);
 	}
 	body
 		{}
