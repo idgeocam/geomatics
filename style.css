@@ -119,12 +119,8 @@ img:hover {
 		--bgcolorh3:hsl(190deg 100% 100%);
 		--bgcolorgrid:hsl(190deg 100% 100%);
 	}
-	body
-		{}
 	h1, h2, h3, h4, h5
 		{filter:none;}
-	h1
-		{margin-top:0;}
 	ul:last-child
 		{margin-bottom:0;}
 	.fond
