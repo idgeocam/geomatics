@@ -63,6 +63,7 @@ img:hover {
 	animation-iteration-count:1;
 	animation-fill-mode:both;
 	animation-play-state:paused;
+	transform:translateZ(0.001px);
 }
 .titre {
 }
