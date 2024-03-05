@@ -99,7 +99,7 @@ img:not(:hover)
 }
 @media only print {
 	:root {
-		font-size:13.35px;
+		font-size:13.1px;
 		--clair:hsl(190deg 100% 0%);
 		--titre:hsl(190deg 100% 15%);
 		--sombre:hsl(190deg 100% 100%);
